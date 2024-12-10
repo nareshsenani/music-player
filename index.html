@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+</head>
+
+<body>
+    <div class="navBar">
+        <div id="brand">
+            <img src="icon.png" alt="">
+        </div>
+        <div id="home-search">
+            <div id="home">
+                <img src="icons/home-icon.svg" alt="">
+            </div>
+            <div id="input-area">
+                <img src="icons/search-icon.svg" alt="">
+                <input id="search-input" type="text" placeholder="What you want to play ?">
+                <img id="window" src="icons/window-restore-regular.svg" alt="">
+            </div>
+        </div>
+        <div id="download-acount">
+            <div id="download">
+                <img src="icons/circle-down.svg" alt="">
+                <p>app</p>
+            </div>
+            <div class="bell"><img src="icons/bell.svg" alt=""></div>
+            <div id="acount">
+                <div id="mid-area">
+                    <p>N</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="child-one">
+            <div id="top"><img src="icons/book.svg" alt=""></div>
+            <div class="book" id="singer-one">
+                <img src="image/arijit singh.jpg" alt="">
+            </div>
+            <div class="book" id="singer-two">
+                <img src="image/vishal.jpg" alt="">
+            </div>
+            <div class="book" id="singer-three">
+                <img src="image/akhil.jpg" alt="">
+            </div>
+            <div class="book" id="singer-four">
+                <img src="image/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="child-two">
+            <div class="search-result">
+                
+            </div>
+            <div class="resent-search">
+                <h3>Resent searches</h3>
+                <span>Show all</span>
+            </div>
+            <div class="songList">
+                <div id="0" class="box">
+                    <img src="image/1.jpg" alt="">
+                    <div class="song-name">
+                        <span>darkside</span>
+                        <span class="name">alan walker</span>
+                    </div>
+                </div>
+                <div id="1" class="box">
+                    <img src="image/2.jpg" alt="">
+                    <div class="song-name">
+                        <span>Alone</span>
+                        <span class="name">alan walker</span>
+                    </div>
+                </div>
+                <div id="2" class="box">
+                    <img src="image/3.jpg" alt="">
+                    <div class="song-name">
+                        <span>Warriyo</span>
+                        <span class="name"> Mortals</span>
+                    </div>
+                </div>
+                <div id="3" class="box">
+                    <img src="image/4.jpg" alt="">
+                    <div class="song-name">
+                        <span>aaj ki rat</span>
+                        <span class="name">artist</span>
+                    </div>
+                </div>
+                <div id="4" class="box">
+                    <img src="image/5.jpg" alt="">
+                    <div class="song-name">
+                        <span>mashup 2.0</span>
+                        <span class="name">alan walker</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resent-search" id="second-list">
+                <h3>Previous searches</h3>
+                <span>Show all</span>
+            </div>
+            <div class="songList">
+                <div id="5" class="box">
+                    <img src="image/6.jpg" alt="">
+                    <div class="song-name">
+                        <span>culture</span>
+                        <span class="name">jerry</span>
+                    </div>
+                </div>
+                <div id="6" class="box">
+                    <img src="image/7.jpg" alt="">
+                    <div class="song-name">
+                        <span>ishq</span>
+                        <span class="name">faheem abdullah</span>
+                    </div>
+                </div>
+                <div id="7" class="box">
+                    <img src="image/8.jpg" alt="">
+                    <div class="song-name">
+                        <span>o mahi</span>
+                        <span class="name">arijit singh</span>
+                    </div>
+                </div>
+                <div id="8" class="box">
+                    <img src="image/9.jpg" alt="">
+                    <div class="song-name">
+                        <span>o sajni re</span>
+                        <span class="name">arijit singh</span>
+                    </div>
+                </div>
+                <div id="9" class="box">
+                    <img src="image/10.jpg" alt="">
+                    <div class="song-name">
+                        <span>stebin ben</span>
+                        <span class="name">sahiba</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child-three">
+            <span id="songStatus"></span>
+            <video id="vedioPlay" src="vedio.mp4"></video>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="songInfo">
+            <div id="image">
+                
+            </div>
+            <p id="name"></p>
+            <div class="playing"> <img src="playing.gif" alt=""> </div>
+        </div>
+        <div class="controll">
+            <div class="masterplay">
+                <img id="previous" src="icons/backward-step.svg" alt="">
+                <img id="play" src="icons/circle-play.svg" alt="">
+                <img id="next" src="icons/forward-step.svg" alt="">
+            </div>
+            <div class="range">
+                <span id="curr-time"></span>
+                <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+                <span id="ended-time"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

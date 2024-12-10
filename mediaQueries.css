@@ -1,0 +1,157 @@
+@media(max-width:767px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #brand {
+        display: none;
+    }
+
+    #window {
+        display: none;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content:space-around;
+    }
+
+    #download-acount {
+        width: 10%;
+        justify-content: center;
+    }
+
+    #download {
+        font-size: 13px;
+    }
+
+    #acount {
+        display: none;
+    }
+
+    .bell {
+        display: none;
+    }
+
+    #home {
+        border-radius: 50%;
+    }
+
+    #home-search {
+        justify-content:flex-start;
+        width: 80%;
+    }
+
+    #input-area {
+        width:75%;
+    }
+
+    input {
+        border: none;
+        width: 72%;
+    }
+
+    .container {
+        height: 74vh;
+    }
+
+    .child-one {
+        display: none;
+    }
+
+    .child-two {
+        padding: 0;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .child-three {
+        display: none;
+    }
+
+    .songList {
+        overflow-y: scroll;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .songList::-webkit-scrollbar{
+        display: none;
+    }
+
+    .resent-search {
+        margin-top: 0;
+    }
+
+    .resent-search span {
+        margin-right: 0;
+    }
+
+    #second-list {
+        margin-top: 10%;
+    }
+
+    .box {
+        flex-shrink: 0;
+        height: 170px;
+        width: 170px;
+    }
+
+    .container{
+        height: 77vh;
+    }
+
+    .bottom {
+        height: 10vh;
+    }
+
+    .range {
+        display: none;
+    }
+
+    .masterplay {
+        position: absolute;
+        right: 15px;
+    }
+
+    .songInfo {
+        width: 65%;
+        height: 100%;
+    }
+
+    .search-result {
+        position:relative;
+        bottom: 15px;
+        overflow-x: none;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    #acount{
+        display: none;
+    }
+
+    .child-three{
+        display: none;
+    }
+
+    .child-one{
+        width: 13%;
+    }
+
+    .child-two{
+        width: 86%;
+    }
+
+    .songInfo {
+        width: 65%;
+    }
+
+    .range {
+        display: none;
+    }
+}
